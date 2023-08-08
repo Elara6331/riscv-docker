@@ -6,5 +6,5 @@ if [[ $# == 0 ]]; then
 fi
 
 docker login gitea.elara.ws
-docker build . -t "gitea.elara.ws/elara6331/golang:$1"
+docker build . -t "gitea.elara.ws/elara6331/golang:$1" --no-cache
 docker push "gitea.elara.ws/elara6331/golang:$1"
