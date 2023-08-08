@@ -8,6 +8,8 @@ The containers are stored on my gitea instance, so you can pull them like this:
 docker pull gitea.elara.ws/elara6331/golang:latest
 ```
 
+Some of the images use [ko.build](https://github.com/ko-build/ko)
+
 ### Images
 
 - `golang`: An alpine-based image with Go installed
