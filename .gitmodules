@@ -1,0 +1,3 @@
+[submodule "go-import-redirector/go-import-redirector"]
+	path = go-import-redirector/go-import-redirector
+	url = https://github.com/rsc/go-import-redirector
