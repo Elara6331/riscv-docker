@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # info prints an informational message
 info() {
   echo $'\x1b[32m[INFO]\x1b[0m' "$@"
