@@ -8,10 +8,9 @@ The containers are stored on my gitea instance, so you can pull them like this:
 docker pull gitea.elara.ws/elara6331/golang:latest
 ```
 
-Some of the images use [ko.build](https://ko.build)
-
 ### Images
 
+- `static`: A base image with just enough files to run static binaries
 - `golang`: An alpine-based image with Go installed
 - `webserver`: A very simple webserver
 - `go-import-redirector`: rsc's [go-import-redirector](https://github.com/rsc/go-import-redirector) project
