@@ -1,5 +1,7 @@
 # riscv-docker
 
+[![status-badge](https://ci.elara.ws/api/badges/51/status.svg)](https://ci.elara.ws/repos/51)
+
 This repo contains custom docker images that I'm using for my cluster. You can find the containers I build from these in the [Packages](https://gitea.elara.ws/Elara6331/riscv-docker/packages) section of this repo.
 
 The containers are stored on my gitea instance, so you can pull them like this:
