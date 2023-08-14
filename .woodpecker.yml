@@ -1,0 +1,11 @@
+platform: linux/amd64
+steps:
+  build:
+    image: gitea.elara.ws/elara6331/builder
+    environment:
+      - REGISTRY=gitea.elara.ws
+      - REGISTRY_USERNAME=Elara6331
+    secrets: [ registry_password ]
+    commands:
+      - registry-login
+      - ./build.sh
