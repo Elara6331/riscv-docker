@@ -45,7 +45,7 @@ for dir in "${!changed_directories[@]}"; do
     	info "Entering ${dir}..."
     	pushd "${dir}" >/dev/null || error "pushd failed"
     	info "Executing ${build_script}..."
-        # ./build.sh || error "${build_script} failed"
+        ./build.sh || error "${build_script} failed"
         info "Finished executing ${build_script}"
         popd >/dev/null || error "popd failed"
         info "Exited ${dir}"
