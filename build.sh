@@ -33,6 +33,11 @@ for file in $changed_files; do
     fi
 done
 
+# Check if FORCE_BUILD is set and add the directory inside to changed_directories if it is
+if [ -n "${FORCE_BUILD}" ]; then
+    changed_directories["${FORCE_BUILD}"]=1
+fi
+
 if [[ "${#changed_directories[@]}" == 0 ]]; then
 	info "Nothing to do. Exiting..."
 	exit 0
