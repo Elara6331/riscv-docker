@@ -1,0 +1,40 @@
+contents:
+  repositories:
+    - https://dl-cdn.alpinelinux.org/alpine/edge/main
+  packages:
+    - busybox
+    - nghttp2
+    - nodejs
+
+accounts:
+  groups:
+    - groupname: node
+      gid: 65532
+  users:
+    - username: node
+      uid: 65532
+      gid: 65532
+  run-as: 65532
+
+paths:
+  - path: /app
+    type: directory
+    permissions: 0o777
+    uid: 65532
+    gid: 65532
+
+work-dir: /app
+
+environment:
+  NODE_PORT: 3000
+  PATH: '/usr/sbin:/sbin:/usr/bin:/bin'
+  NPM_CONFIG_UPDATE_NOTIFIER: false
+
+entrypoint:
+  command: /usr/bin/node
+cmd: --help
+
+archs:
+  - amd64
+  - arm64
+  - riscv64

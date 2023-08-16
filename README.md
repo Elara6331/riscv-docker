@@ -16,6 +16,7 @@ docker pull gitea.elara.ws/elara6331/golang:latest
 - `golang`: An alpine-based image with Go installed
 - `webserver`: A very simple webserver
 - `go-import-redirector`: rsc's [go-import-redirector](https://github.com/rsc/go-import-redirector) project
+- `node`: An alpine-based image with NodeJS installed
 
 ### Acknowledgements
 
