@@ -4,6 +4,8 @@ contents:
     - https://dl-cdn.alpinelinux.org/alpine/edge/community
   packages:
     - busybox
+    - alpine-release
+    - ca-certificates-bundle
     - nghttp2
     - nodejs-current
     - npm
