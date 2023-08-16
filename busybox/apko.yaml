@@ -1,0 +1,6 @@
+include: gitea.elara.ws/elara6331/riscv-docker/static/apko.yaml@master
+
+contents:
+  packages:
+    - busybox
+    - ssl_client
