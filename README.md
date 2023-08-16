@@ -13,10 +13,12 @@ docker pull gitea.elara.ws/elara6331/golang:latest
 ### Images
 
 - `static`: A base image with just enough files to run static binaries
+- `busybox`: A base image with the busybox utilities installed
 - `golang`: An alpine-based image with Go installed
 - `webserver`: A very simple webserver
 - `go-import-redirector`: rsc's [go-import-redirector](https://github.com/rsc/go-import-redirector) project
-- `node`: An alpine-based image with NodeJS installed
+- `node`: An alpine-based image with NodeJS and npm installed
+- `crane`: Google's [crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane) project
 
 ### Acknowledgements
 
