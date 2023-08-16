@@ -4,3 +4,6 @@ contents:
   packages:
     - busybox
     - ssl_client
+
+entrypoint:
+  command: /bin/sh
