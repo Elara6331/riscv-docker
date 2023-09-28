@@ -20,5 +20,4 @@ for arch in pkgs/*/; do
 	abuild-sign "$arch/APKINDEX.tar.gz"
 done
 
-version_tag="gitea.elara.ws/elara6331/golang:$(lure info go-bin | yq -r .version | head -1)"
-apko publish --sbom=false apko.yaml gitea.elara.ws/elara6331/golang:latest "$version_tag"
+apko publish --sbom=false apko.yaml gitea.elara.ws/elara6331/golang:latest gitea.elara.ws/elara6331/golang:1.21.1
