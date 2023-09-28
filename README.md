@@ -10,6 +10,8 @@ The containers are stored on my gitea instance, so you can pull them like this:
 docker pull gitea.elara.ws/elara6331/golang:latest
 ```
 
+Read my article [here](https://www.elara.ws/articles/riscv-cluster)!
+
 ### Images
 
 - `static`: A base image with just enough files to run static binaries
