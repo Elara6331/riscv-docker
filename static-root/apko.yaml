@@ -7,6 +7,9 @@ contents:
     - ca-certificates-bundle
     - tzdata
 
+environment:
+  RUNNING_IN_DOCKER: true
+
 archs:
   - amd64
   - arm64
